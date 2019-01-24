@@ -2,11 +2,60 @@
 <!--
 	Name: Cody Czora
 	Date Created: 1/21/2019
-	Most recent revision: 1/21/2019
+	Most recent revision: 1/24/2019
 -->
 <html lang="en">
 	<head>
 		<title>Cody Czora's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			<!-- table styling -->
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			
+			table, th, td {
+				border: 1px solid #13292D;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			
+			table {
+				margin: auto;
+				size: 90%;
+			}
+			
+			tr {
+				height: 30px;
+			}
+			
+			th {
+				background-color: #13292D;
+				color: #F8FFF7;
+			}
+			
+			tbody tr:nth-child(odd) {
+				background-color: #7D7791;
+			}
+			
+			<!--body styling -->
+
+			.right-content {
+				float:left;
+			}
+
+			article img {
+				float:left;
+			}	
+			
+			ul {
+				overflow:hidden
+				}
+		</style>
+		
 	</head>
 	
 	<body>
@@ -15,60 +64,75 @@
 			<h1>Portfolio for Cody Czora</h1>
 		</header>
 		
-		<nav>
-			<hr />
-				<p>
-					<a href="projects.html">Projects</a>
-				
-					<a href="testimonials.html">Testimonials</a>
-				
-					<a href="contact.html">Contact Me</a>
-				</p>
-			<hr />
+		<nav>	
+			<p><a href="projects.html">Projects</a></p>
+			<p><a href="testimonials.html">Testimonials</a></p>
+			<p><a href="contact.html">Contact Me</a></p>
+			<div class="clear-float" />
 		</nav>
 	
 		
 		<section>
 		
-			<article id="about-me">
+			<article id="about-me"> <!-- This is the first chunk inside the section element. -->
+			
+			<div class="clearfix">
 				<h2><em>About Me</em></h2>
-				<img src="Images/ccz-portrait.jpg" alt="Portrait of Cody Czora">
+				<img src="Images/ccz-portrait.jpg" alt="" width="250" />
 				<p>I am an aspiring software developer living in Champlin, Minnesota with my fiance and two cats.</p>
 				<p>I have a history of working in the medical laboratory field, and recently made the decision to switch careers fields and move to the technology sector.
 			I hope to bring my medical experience to bear in making great software and websites to organizations around the country!</p>
+			</div>
+			
+			<div class="clear-float" />
+			
 			</article>
 			
-			<article id="past-experiences">
+			
+			<article id="past-experiences"> <!-- This is the second chunk inside the section element. -->
+			<div class="clearfix">
 				<h2><em>Past Experiences</em></h2>
-				<img src="images/lab-hands.jpg" alt="Gloved hands doing lab work">
-				<table border=1>
-				<caption><strong>Employment History</strong></caption>
-				<tr>
-					<th>Years of Employment</th>
-					<th>Title</th>
-					<th>Company</th>
-				</tr>
-				<tr>
-					<td>2017-2018</td>
-					<td>Serologist I</th> 
-					<td>Memorial Blood Centers</td>
-				</tr>
-				<tr>
-					<td>2013-2017</td>
-					<td>Medical Laboratory Scientist</td>
-					<td>Fairview Riverside Hospital Acute Care Laboratory</td>
-				</tr>
-				<tr>
-					<td>2009-2012</td>
-					<td>Student</td>
-					<td>University of Minnesota-Twin Cities</td>
-				</tr>	
-				</table>
+				<img src="images/lab-hands.jpg" alt="" width="250" />
+				<div class="right-content">
+					<table>
+					<caption>Employment History</caption>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-2018</td>
+								<td>Serologist I</td> 
+								<td>Memorial Blood Centers</td>
+							</tr>
+							<tr>
+								<td>2013-2017</td>
+								<td>Medical Laboratory Scientist</td>
+								<td>Fairview Riverside Hospital Acute Care Laboratory</td>
+							</tr>
+							<tr>
+								<td>2009-2012</td>
+								<td>Student</td>
+								<td>University of Minnesota-Twin Cities</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>	
+			<div class="clear-float" />
+			
 			</article>
 		
-			<article id="hobbies">
+		
+			<article id="hobbies"> <!-- This is the third chunk inside the section element. -->
+				<div class="clearfix">
 				<h2><em>Hobbies</em></h2>
-				<img src="images/DNA.jpg" alt="DNA strand">
+				<img src="images/DNA.jpg" alt="" width="250" />
+				<div class="right-content">
 				<ul>
 					<li>Authors</li>
 						<ol>
@@ -82,8 +146,6 @@
 							<li>Tomb Raider</li>
 							<li>Minecraft</li>
 						</ol>
-				</ul>
-				<ul>
 					<li>Research Interests</li>
 						<ul>
 							<li>Genetics and Biology</li>
@@ -97,13 +159,12 @@
 							<li>Playing wth my cats</li>
 						</ul>
 				</ul>
-				
+				</div>
+			</div>
 			</article>	
-		
 		</section>
 		
 		<footer>
-			<hr />
 			<p>&copy; 2019 Cody Czora. All rights reserved. </p>
 		</footer>
 		

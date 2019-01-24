@@ -1,0 +1,33 @@
+/*
+	Name: Cody Czora
+	Date Created: 1/24/2019
+	Most recent revision: 1/24/2019
+*/
+
+header, footer {
+	background-color: #af1b3f;
+	color: #efe4d7;
+	height: 100px;
+	font-family: "Merienda", cursive;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 5px;
+}
+
+body {
+	font-family: "Catamaran", sans-serif;
+	font-color: #14090b;
+}
+
+nav {
+	border-top: solid 5px #14090b;
+	border-bottom: solid 5px #14090b;
+	margin-bottom:4px;
+}
+
+nav a {
+	background-color: #af1b3f;
+	color: #efe4d7;
+	padding: 8px;
+}
+	
