@@ -2,13 +2,72 @@
 <!--
 	Name: Cody Czora
 	Date Created: 1/23/2019
-	Most recent revision: 1/24/2019
+	Most recent revision: 1/28/2019
 -->
 <html lang="en">
 	<head>
-		<title>Menu</title>
+		<title>Contact Us</title>
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
 		<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+		
+		<style>
+			<!-- form styling -->	
+			
+			input[type=select] {
+				height: 20px;
+			}
+			
+			textarea {
+				height: 150px;
+				width: 80%;
+			}
+			 
+			input[type=submit] {
+				display: block;
+				font-size: 1.2em;
+				background-color: #af1b3f;
+				color: #efe4d7;
+				padding: 4px 8px;
+				margin: 0 auto;
+			}
+			
+			input[type=submit]:hover {
+				background-color: #efe4d7;
+				color: #14090b;
+				font-weight: bold;
+			}	
+			
+			input[type=submit]:active {
+				font-weight: normal;
+			}	
+			
+			input[type=text] {
+				border: 1px solid #14090b;
+				width: 80%;
+				padding: 8px 8px;
+				margin: 8px 0px;
+				box-sizing: border-box;
+				font-size: 1.1em;
+			}
+ 
+			text, select, textarea, radio, checkbox {
+				margin-bottom:10px;
+				width: 100%;
+			}
+
+			.required label{
+				font-weight: bold;
+			}
+			 
+			 form {
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: left;
+				width: 50%;
+			}
+		
+		</style>
 	</head>
 
 		<body>
@@ -17,12 +76,16 @@
 			</header>
 			
 			<nav>
+			<div class="clearfix">
 				<p><a href="index.html">Home</a></p>
 				<p><a href="menu.html">Menu</a></p>	
-				<p><a href="contact.html">Contact Us</a></p>	
+				<p><a href="contact.html">Contact Us</a></p>
+			</div>
 			</nav>
 			
 			<form action="submit.html" method="POST">
+				
+				<div class="required">
 				<label for="name">Name:</label>
 					<input type="text" id="name" name="name" required> <br />
 				
@@ -31,8 +94,8 @@
 				
 				<label for="phone">Phone:</label>
 					<input type="text" id="phone" name="phone" required> <br />
-				
-				<br />
+				</div>	
+					
 			
 				<label for="reason">Reason for Inquiry:</label>
 					<select for="reason" id="reason" name="reason">
@@ -41,30 +104,31 @@
 					<option value="feedback" >Feedback</option>
 					<option value="other">Other</option>
 					</select>
-					
+				
 				<br />
 				
 				<label for="info">Additional Information:</label>
-					<textarea id="info" name="info"></textarea> <br />
+					<textarea id="info" name="info"></textarea>
 				
-				<label for="visited">Have you been to the restaurant?</label> <br />
-					<input type="radio" id="no" name="visited" value="no" checked>
-					<label for="no">No</label>
-					<input type="radio" id="yes" name="visited" value="yes">
-					<label for="yes">Yes</label>
-					
-				<br />
-					
-				<label for="contact-days">Best days to contact you:</label>
-					<input type="checkbox" name="day-choice" value="mon" >M</input>
-					<input type="checkbox" name="day-choice" value="tues">T</input>
-					<input type="checkbox" name="day-choice" value="weds">W</input>
-					<input type="checkbox" name="day-choice" value="thurs">Th</input>	
-					<input type="checkbox" name="day-choice" value="fri">F</input>
-					
-				<br />
+				<fieldset class="clearfix">
+					<label for="visited">Have you been to the restaurant?</label>
+						<input type="radio" id="no" name="visited" value="no" checked>
+						<label for="no">No</label>
+						<input type="radio" id="yes" name="visited" value="yes">
+						<label for="yes">Yes</label>	
+				</fieldset>	
+
 				
-				<input type="submit" value="Send Request" />
+				<fieldset class="clearfix">
+					<label for="contact-days">Best days to contact you:</label>
+						<input type="checkbox" name="day-choice" value="mon" >M</input>
+						<input type="checkbox" name="day-choice" value="tues">T</input>
+						<input type="checkbox" name="day-choice" value="weds">W</input>
+						<input type="checkbox" name="day-choice" value="thurs">Th</input>	
+						<input type="checkbox" name="day-choice" value="fri">F</input>
+				</fieldset>
+				
+				<input type="submit" name="submit" value="Send Request" />
 			
 			</form>
 			

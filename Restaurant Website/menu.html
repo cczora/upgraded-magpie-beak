@@ -2,7 +2,7 @@
 <!--
 	Name: Cody Czora
 	Date Created: 1/23/2019
-	Most recent revision: 1/24/2019
+	Most recent revision: 1/28/2019
 -->
 <html lang="en">
 	<head>
@@ -16,13 +16,37 @@
 				font-weight: bold;
 				font-size: 1.2em;
 				margin-bottom: 8px;
+				height: 30px;
 				}
 				
-			tbody p {
+			tbody {
 				text-align: center;
 				text-decoration: none;
-				padding: 0px 3px;
+				padding: 0px;
 				}
+				
+			.food {
+				margin: auto;
+				width: 100%;
+			}
+			
+			.beverage {
+				margin:auto;
+				width: 70%;
+				padding-bottom: 10px;
+			}
+			
+			 
+		<!-- body styling -->
+			nav, section {
+				background-color: #a04b4b;
+				}
+				
+			th {
+				font-size: 1.1em;
+				text-align: center;
+				}
+		
 		</style>
 	</head>
 
@@ -32,14 +56,16 @@
 			</header>
 			
 			<nav>
+			<div class="clearfix">
 				<p><a href="index.html">Home</a></p>
 				<p><a href="menu.html">Menu</a></p>	
-				<p><a href="contact.html">Contact Us</a></p>	
+				<p><a href="contact.html">Contact Us</a></p>
+			</div>
 			</nav>
 			
 			<section>
 					<article>
-						<table style="width:100%">
+						<table class="food">
 						
 						<thead>
 							<tr>
@@ -53,16 +79,16 @@
 							<tr>
 								<td>
 									<p>An American Classic!</p>
-									<p>Your choice - with or without cheese</p>
-									<p>pickle, onion, tomato, and lettuce</p>
+									<p>Your choice - with or without cheese
+									pickle, onion, tomato, and lettuce</p>
 									<p>Served with our famous thick cut french fries</p>
 									<p>$7.95</p>
 								</td>
 						
 								<td>
 									<p>A Summer Classic!</p>
-									<p>Your choice - white or wheat bun</p>
-									<p>Relish, mustard, and ketchup</p>
+									<p>Your choice - white or wheat bun
+									Relish, mustard, and ketchup</p>
 									<p>Served with our house-made chips</p>
 									<p>$7.95</p>
 
@@ -107,7 +133,7 @@
 								<td>
 									<p>A Taste of Texas!</p>
 									<p>Smoked Brisket on thick-cut Texas Toast</p>
-									<p>cole slaw</p>
+									<p>Cole Slaw</p>
 									<p>Served with our famous thick-cut french fries</p>
 									<p>$7.95</p>
 								</td>								
@@ -115,9 +141,44 @@
 						</tbody>
 							
 						</table>	
-					</article>			
+					</article>		
+					
+					<article>
+						<table class="beverage">
+							<thead>
+								<tr>
+									<th>Beverages</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr>
+									<td>Root Beer</td>
+									<td>$3.00</td>	
+								</tr>
+								
+								<tr>
+									<td>Bottled Water</td>
+									<td>$1.25</td>
+								</tr>
+								
+								<tr>
+									<td>Lemonade</td>
+									<td>$1.00</td>
+								</tr>
+								
+								<tr>
+									<td>Iced Tea</td>
+									<td>$1.25</td>
+								</tr>
+							
+							</tbody>
+						</table>
+					
+					</article>
 
 			</section>	
+			
 			
 			<footer>
 				<p>4870 Ashcraft Court, San Diego, CA 92103</p>

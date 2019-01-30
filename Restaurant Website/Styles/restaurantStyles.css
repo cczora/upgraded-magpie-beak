@@ -1,8 +1,14 @@
 /*
 	Name: Cody Czora
 	Date Created: 1/24/2019
-	Most recent revision: 1/24/2019
+	Most recent revision: 1/28/2019
 */
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 
 header, footer {
 	background-color: #af1b3f;
@@ -11,23 +17,52 @@ header, footer {
 	font-family: "Merienda", cursive;
 	font-size: 1.5em;
 	text-align: center;
-	margin: 5px;
+	margin: 2px auto;
+	padding: 30px 10px 30px 10px;
+}
+
+nav {
+	border-top: solid 3px #14090b;
+	border-bottom: solid 3px #14090b;
+	margin: 20px 20px;
+	padding-bottom: 20px;
+}
+
+nav a:link {
+	background-color: #af1b3f;
+	color: #efe4d7;
+	padding: 8px;
+	margin: 10px;
+	border: thin solid #efe4d7;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100px;
+	float: left;
 }
 
 body {
 	font-family: "Catamaran", sans-serif;
 	font-color: #14090b;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #efe4d7;
 }
 
-nav {
-	border-top: solid 5px #14090b;
-	border-bottom: solid 5px #14090b;
-	margin-bottom:4px;
+nav a:hover {
+	background-color: white;
+	color: #af1b3f;
+	font-weight: bold;
 }
 
-nav a {
-	background-color: #af1b3f;
-	color: #efe4d7;
-	padding: 8px;
+nav a:active {
+	text-decoration: none;
+	font-weight: normal;
 }
+
+nav a:visited {
+	font-color: hotpink;
+	
+}
+
 	
