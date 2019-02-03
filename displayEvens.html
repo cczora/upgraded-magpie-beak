@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<
+		<style>
+			.form-group {
+				width: 80%;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			label {
+				text-size: 1.2em;
+				font-weight: bold;
+			}
+			.btn {
+				display: block;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+		</style
+	</head>
+	
+	<body>
+		<h1>Sample</h1>
+		<form name="mathFun" onsubmit="displayEvens()" class="form-vertical">
+			<div class = "form-group">
+				<label for = "starNum">Starting Number</label>
+					<input class="form-control" id="startingNumber" type="number" >
+			</div>
+			
+			<div class = "form-group">
+				<label for = "endNum">Ending Number</label>
+				<input class="form-control" id="endingNumber" type="number">
+			</div>
+			
+			<div class="form-group">
+				<label for="steps">Step</label>
+				<input class="form-control" id="numberOfSteps" type="number">
+			</div>
+
+			<input class="btn btn-outline-primary btn-lg" type="submit" value="Display Evens" id="submitButton">
+			
+				<p id = "Results" style="display:none">
+					Here are the even numbers between <span id="num1"></span> and 
+					<span id="num2"></span> by <span id="steps"></span>
+				</p>
+				
+				<span id="Results2" style="display:none"></span>
+					
+		</form>
+		<script type="text/JavaScript" src="displayEvens.js"></script>
+	</body>
+</html>
